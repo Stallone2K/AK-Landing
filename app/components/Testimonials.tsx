@@ -8,6 +8,8 @@ interface Testimonial {
   img: string;
 }
 
+import Image from "next/image";
+
 const testimonials: Testimonial[] = [
   {
     name: "Anujay Goel",
@@ -73,7 +75,7 @@ const Testimonials = () => {
             <p className="text-gray-700 text-center mb-4">
               {testimonials[currentTestimonial].quote}
             </p>
-            <img
+            <Image
               src={testimonials[currentTestimonial].img}
               alt={testimonials[currentTestimonial].name}
               className="w-20 h-20 rounded-full mx-auto "
