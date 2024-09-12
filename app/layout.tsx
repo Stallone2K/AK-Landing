@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "AK Enterprises",
-  description: "Furniture That Fits Your Life -AK Enterprises",
+  description:
+    "AK Enterprise is a furniture company known for its high-quality and stylish furniture designs. Specializing in both modern and affordable furniture, AK Enterprise focuses on creating durable and aesthetically pleasing pieces for homes and offices.",
 };
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        <Footer></Footer>
+      </body>
     </html>
   );
 }

@@ -1,26 +1,42 @@
+"use client";
 import { useState } from "react";
-
+import Link from "next/link";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-center h-10 p-10 top-0">
+    <div className="z-10 flex items-center justify-center p-10 top-0">
       <div className="gap-6 font-bold lg:flex hidden">
-        <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+        <Link
+          href="/"
+          className="hover:text-slate-500 hover:underline cursor-pointer"
+        >
           Home
-        </h3>
-        <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+        </Link>
+        <Link
+          href="/About"
+          className="hover:text-slate-500 hover:underline cursor-pointer"
+        >
           About
-        </h3>
-        <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+        </Link>
+        <Link
+          href="/Career"
+          className="hover:text-slate-500 hover:underline cursor-pointer"
+        >
           Career
-        </h3>
-        <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+        </Link>
+        <Link
+          href="/Gallery"
+          className="hover:text-slate-500 hover:underline cursor-pointer"
+        >
           Gallery
-        </h3>
-        <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+        </Link>
+        <Link
+          href="/Contact"
+          className="hover:text-slate-500 hover:underline cursor-pointer"
+        >
           Contact Us
-        </h3>
+        </Link>
       </div>
       <button
         className="lg:hidden flex flex-col justify-center w-8 h-8 bg-gray-200 rounded hover:bg-gray-300"
@@ -32,21 +48,36 @@ function NavBar() {
       </button>
       {isOpen && (
         <div className="lg:hidden flex flex-col gap-6 font-bold absolute top-10 right-0 bg-white p-4 rounded shadow-md">
-          <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+          <Link
+            href="/"
+            className="hover:text-slate-500 hover:underline cursor-pointer"
+          >
             Home
-          </h3>
-          <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+          </Link>
+          <Link
+            href="/About"
+            className="hover:text-slate-500 hover:underline cursor-pointer"
+          >
             About
-          </h3>
-          <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+          </Link>
+          <Link
+            href="/Career"
+            className="hover:text-slate-500 hover:underline cursor-pointer"
+          >
             Career
-          </h3>
-          <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+          </Link>
+          <Link
+            href="/Gallery"
+            className="hover:text-slate-500 hover:underline cursor-pointer"
+          >
             Gallery
-          </h3>
-          <h3 className="hover:text-slate-500 hover:underline cursor-pointer">
+          </Link>
+          <Link
+            href="/Contact"
+            className="hover:text-slate-500 hover:underline cursor-pointer"
+          >
             Contact Us
-          </h3>
+          </Link>
         </div>
       )}
     </div>

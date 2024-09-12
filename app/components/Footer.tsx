@@ -5,7 +5,7 @@ import Email from "../assets/Email.png";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-12 ">
+    <footer className="py-12 bottom-0">
       <div className="container mx-auto px-4 max-w-[1280px]">
         <div className="flex items-center justify-between">
           <div>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
           <Image src={FooterSofa} alt="FooterSofa"></Image>
         </div>
 
-        <div className="flex justify-around items-center">
+        <div className="flex justify-between items-center">
           <div className="mb-6 max-w-[400px]">
             <h2 className="text-2xl font-bold text-gray-800">
               A.K Enterprises
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Right Side  */}
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 text-sm">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 text-sm">
             <div className="flex flex-col">
               <ul className="space-y-2 text-gray-600">
                 <li>
@@ -82,11 +82,6 @@ const Footer: React.FC = () => {
                 <li>
                   <a href="#" className="hover:text-gray-900">
                     Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-900">
-                    Blog
                   </a>
                 </li>
                 <li>
@@ -132,14 +127,9 @@ const Footer: React.FC = () => {
                     Leadership
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-gray-900">
-                    Privacy Policy
-                  </a>
-                </li>
               </ul>
             </div>
-            <div className="flex flex-col">
+            {/* <div className="flex flex-col">
               <ul className="space-y-2 text-gray-600">
                 <li>
                   <a href="#" className="hover:text-gray-900">
@@ -157,7 +147,7 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-8 flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
