@@ -5,7 +5,7 @@
 // import Chair from "./Chair";
 import NavBar from "./NavBar";
 import Image from "next/image";
-import Chair from "../assets/Chair.png";
+import Chair from "../assets/3DChair.gif";
 function Hero() {
   return (
     <div className="bg-[#EAE9E9] h-screen top-0">
@@ -39,7 +39,7 @@ function Hero() {
 
           <Chair></Chair>
         </Canvas> */}
-        <Image src={Chair} alt="Chair"></Image>
+        <Image src={Chair} alt="Chair" height={1000} width={1000}></Image>
       </div>
     </div>
   );
