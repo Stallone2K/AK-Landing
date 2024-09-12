@@ -17,7 +17,7 @@ function Clients() {
         <Image src={Amazon} alt="Amazon" width={200} height={200}></Image>
         <Image src={DreamHome} alt="DreamHome" width={200} height={200}></Image>
         <Image src={OnBuy} alt="OnBuy" width={200} height={200}></Image>
-        <Image src={ManoMano} alt="ManoMano" width={100} height={100}></Image>
+        <Image src={ManoMano} alt="ManoMano" width={200} height={200}></Image>
         <Image src={Wayfair} alt="Wayfair" width={200} height={200}></Image>
         <Image src={Ebay} alt="Ebay" width={200} height={200}></Image>
       </div>

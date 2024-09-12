@@ -1,12 +1,38 @@
 import React from "react";
 import Image from "next/image";
+import FooterSofa from "../assets/FooterSofa.png";
+import Email from "../assets/Email.png";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center">
-          <div className="mb-6">
+    <footer className="py-12 ">
+      <div className="container mx-auto px-4 max-w-[1280px]">
+        <div className="flex items-center justify-between">
+          <div>
+            <div className="flex gap-2 items-center mb-2">
+              <Image src={Email} alt="Email"></Image>
+              <h3>Get In Touch</h3>
+            </div>
+            <div className="flex gap-4 items-center">
+              <div className="w-full max-w-sm min-w-[200px]">
+                <input
+                  className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  placeholder="Enter Your Name"
+                ></input>
+              </div>
+              <div className="w-full max-w-sm min-w-[200px]">
+                <input
+                  className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  placeholder="Enter Your Email"
+                ></input>
+              </div>
+            </div>
+          </div>
+          <Image src={FooterSofa} alt="FooterSofa"></Image>
+        </div>
+
+        <div className="flex justify-around items-center">
+          <div className="mb-6 max-w-[400px]">
             <h2 className="text-2xl font-bold text-gray-800">
               A.K Enterprises
             </h2>
@@ -43,10 +69,16 @@ const Footer: React.FC = () => {
               <i className="fab fa-linkedin-in" />
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+
+          {/* Right Side  */}
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 text-sm">
             <div className="flex flex-col">
-              <h3 className="mb-2 text-gray-800 font-bold">About Us</h3>
               <ul className="space-y-2 text-gray-600">
+                <li>
+                  <a href="#" className="hover:text-gray-900">
+                    About Us
+                  </a>
+                </li>
                 <li>
                   <a href="#" className="hover:text-gray-900">
                     Services
@@ -59,29 +91,37 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-900">
-                    Contact us
+                    Contact Us
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col">
-              <h3 className="mb-2 text-gray-800 font-bold">Support</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>
                   <a href="#" className="hover:text-gray-900">
-                    Knowledge base
+                    Support
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-900">
-                    Live chat
+                    Knowledge
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-gray-900">
+                    Live Chat
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col">
-              <h3 className="mb-2 text-gray-800 font-bold">Jobs</h3>
               <ul className="space-y-2 text-gray-600">
+                <li>
+                  <a href="#" className="hover:text-gray-900">
+                    Jobs
+                  </a>
+                </li>
                 <li>
                   <a href="#" className="hover:text-gray-900">
                     Our team
@@ -100,8 +140,12 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div className="flex flex-col">
-              <h3 className="mb-2 text-gray-800 font-bold">Nordic Chair</h3>
               <ul className="space-y-2 text-gray-600">
+                <li>
+                  <a href="#" className="hover:text-gray-900">
+                    Nordic Chair
+                  </a>
+                </li>
                 <li>
                   <a href="#" className="hover:text-gray-900">
                     Kruzo Aero
@@ -115,18 +159,18 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="mt-8 flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-            <p className="text-gray-600 text-sm">
-              Copyright 2022 A.K. Enterprises All Rights Reserved.
-            </p>
-            <div className="flex space-x-4 text-gray-600 text-sm">
-              <a href="#" className="hover:text-gray-900">
-                Terms & Conditions
-              </a>
-              <a href="#" className="hover:text-gray-900">
-                Privacy Policy
-              </a>
-            </div>
+        </div>
+        <div className="mt-8 flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+          <p className="text-gray-600 text-sm">
+            Copyright 2022 A.K. Enterprises All Rights Reserved.
+          </p>
+          <div className="flex space-x-4 text-gray-600 text-sm">
+            <a href="#" className="hover:text-gray-900">
+              Terms & Conditions
+            </a>
+            <a href="#" className="hover:text-gray-900">
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>

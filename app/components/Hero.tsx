@@ -3,9 +3,13 @@
 // import { OrbitControls, Environment } from "@react-three/drei";
 // import HeroImage from "../assets/HeroImage.jpg";
 // import Chair from "./Chair";
+import NavBar from "./NavBar";
+import Image from "next/image";
+import Chair from "../assets/Chair.png";
 function Hero() {
   return (
     <div className="bg-[#EAE9E9] h-screen top-0">
+      <NavBar></NavBar>
       <div className="h-screen max-w-[1280px] m-auto flex items-center justify-center">
         <div className="flex flex-col items-start justify-center h-screen gap-10">
           <h1 className="text-8xl font-extrabold drop-shadow-lg	">
@@ -35,6 +39,7 @@ function Hero() {
 
           <Chair></Chair>
         </Canvas> */}
+        <Image src={Chair} alt="Chair"></Image>
       </div>
     </div>
   );
