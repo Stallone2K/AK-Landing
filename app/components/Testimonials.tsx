@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
-
+import PImage from "../assets/PImage.jpg";
 interface Testimonial {
   name: string;
   title: string;
   quote: string;
-  img: string;
 }
-
 import Image from "next/image";
 
 const testimonials: Testimonial[] = [
@@ -16,21 +14,18 @@ const testimonials: Testimonial[] = [
     title: "CEO, Co-Founder, XYZ Inc.",
     quote:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    img: "https://i.pravatar.cc/150",
   },
   {
     name: "Stallone Fernandes",
     title: "Software Engineer, ABC Company",
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    img: "https://i.pravatar.cc/150",
   },
   {
     name: "Arpit Namdev",
     title: "Marketing Manager, DEF Corp",
     quote:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    img: "https://i.pravatar.cc/150",
   },
 ];
 
@@ -76,9 +71,9 @@ const Testimonials = () => {
               {testimonials[currentTestimonial].quote}
             </p>
             <Image
-              src={testimonials[currentTestimonial].img}
-              alt={testimonials[currentTestimonial].name}
-              className="w-20 h-20 rounded-full mx-auto "
+              src={PImage}
+              alt="P"
+              className="w-20 h-20 rounded-full mx-auto object-cover"
             />
             <h4 className="text-lg font-bold text-center">
               {testimonials[currentTestimonial].name}

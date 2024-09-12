@@ -11,7 +11,7 @@ import { useState } from "react";
 function New() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNavigation = (direction: any) => {
+  const handleNavigation = (direction: "next" | "prev") => {
     if (direction === "next") {
       setCurrentIndex((currentIndex + 1) % 6);
     } else if (direction === "prev") {

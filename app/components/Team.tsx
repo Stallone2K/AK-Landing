@@ -9,9 +9,9 @@ function Team() {
           Together We Worked Hard, Together We Succeeded !
         </h2>
         <p>
-          Our achievements are the result of our team's hard work, dedication,
-          and collaboration. Together, we turned challenges into triumphs,
-          proving that success comes from unity and relentless effort.
+          Our achievements are the result of our team&apos;s hard work,
+          dedication, and collaboration. Together, we turned challenges into
+          triumphs, proving that success comes from unity and relentless effort.
         </p>
         <ul className="grid grid-cols-2 gap-4 text-gray-600">
           <li className="flex items-center">
